@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 // Import Components
 import { ChatScreenContainer } from '../../containers';
 
-import { LayoutMainStyled } from '../../stylesheets/Layout.style';
+import { LayoutMainStyled, TitleStyled } from '../../stylesheets/Layout.style';
 import {
   DashboardStyled,
   DashboardContentStyled,
@@ -16,22 +16,25 @@ const Dashboard = ({ error }) => (
   <LayoutMainStyled>
     <DashboardStyled>
       <DashboardContentStyled>
-        Welcome to Meteor React Redux Workshop
-        {error && <ErrorBlockStyled>{error}</ErrorBlockStyled>}
-        <ChatScreenContainer />
+        <TitleStyled>Meteor React Redux Workshop</TitleStyled>
+        {/*{error && <ErrorBlockStyled>{error}</ErrorBlockStyled>}*/}
+        {/*<ChatScreenContainer />*/}
       </DashboardContentStyled>
     </DashboardStyled>
   </LayoutMainStyled>
 );
 
-Dashboard.propTypes = {
-  error: PropTypes.string,
-};
+// Dashboard.propTypes = {
+//   error: PropTypes.string,
+// };
+//
+// Dashboard.defaultProps = {
+//   error: null,
+// };
+//
+// const mapStateToProps = state => ({
+//   error: state.messages.error,
+// });
 
-const mapStateToProps = (state, props) => {
-  return {
-    error: state.messages.error,
-  }
-};
-
-export default connect(mapStateToProps)(Dashboard);
+// export default connect(mapStateToProps)(Dashboard);
+export default Dashboard;

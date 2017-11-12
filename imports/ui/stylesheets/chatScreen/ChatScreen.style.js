@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const ChatScreenStyled = styled.div`
+  margin: auto;
   width: 500px;
   height: 500px;
   border: 1px solid black;

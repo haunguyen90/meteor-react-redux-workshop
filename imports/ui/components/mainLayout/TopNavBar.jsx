@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { TopNavBarStyled } from '/imports/ui/stylesheets/core/TopNavBar.style';
+import { TopNavBarStyled, LogoStyled } from '/imports/ui/stylesheets/core/TopNavBar.style';
 
 const TopNavBar = () => (
 
   <TopNavBarStyled>
+    <LogoStyled src="/img/zigvy_logo.png" alt="" />
   </TopNavBarStyled>
 
 );

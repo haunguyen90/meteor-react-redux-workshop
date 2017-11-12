@@ -16,3 +16,10 @@ export const TopNavBarStyled = styled.div`
     font-family: ${props => props.theme.fontFamily.BaseFontFamily};
   }
 `;
+
+export const LogoStyled = styled.img`
+  width: 65px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+`;
